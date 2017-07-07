@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<link rel="icon" href="images/logo.png" type="image/png" sizes="16x16">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mr. Bin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Icons -->
+	<script src="https://use.fontawesome.com/5af38d42fc.js"></script>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+
+	<style>
+	.tabella {
+		border: 2px solid;
+		}
+
+	.cella {
+		border: 2px solid;
+		border-spacing: 5px;
+		padding: 10px;
+		}
+	.customGlyphicon {
+	  width: 100%;
+	  text-align: center;
+	  color: #000555;
+  		} 
+	</style>
+
+	</head>
+	<body>
+	<header role="banner" id="fh5co-header">
+			<div class="container">
+				<!-- <div class="row"> -->
+			    <nav class="navbar navbar-default">
+		        <div class="navbar-header">
+		        	<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+					<a href="index.html" class="image avatar"><img src="images/logo.png" alt="" /></a>
+		        </div>
+		        <div id="navbar" class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav navbar-right">
+		            <li><a href="index.html#vision" data-nav-section="vision"><span>Vision Statement</span></a></li>
+		            <li><a href="index.html#ams" data-nav-section="ams"><span>AmI Main Steps</span></a></li>
+		            <li><a href="index.html#features" data-nav-section="features"><span>AmI Features</span></a></li>
+		            <li><a href="requirements.html" ><span>Requirements</span></a></li>
+		            <li class="active"><a href="system_architecture.html" ><span>System Architecture</span></a></li>
+		            <li><a href="index.html#issue"  data-nav-section="issue"><span>Open Issues</span></a></li>
+		            <li><a href="index.html#team"  data-nav-section="team"><span>Team Members</span></a></li>
+					<li><a href="https://github.com/AmI-2017/Mr.Bin"><i class="fa fa-github"></i></a></li>
+		          </ul>
+		        </div>
+			    </nav>
+			  <!-- </div> -->
+		  </div>
+	</header>
+
+<div id="slider" data-section="home">
+		<div class="owl-carousel owl-carousel-fullwidth">
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+
+<div id="fh5co-about-us" data-section="sr">
+		<div class="container">
+			<div class="row row-bottom-padded-lg" id="about-us">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">System Architecture</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 to-animate">
+						</div>
+					</div>
+				</div>
+					<div class="col-md-12 to-animate">
+						<center><img src="./images/scheme.png" id="scheme" alt="Scheme" style="width: 60%; margin: 0 auto;" border="0"></center>
+					
+					<h3>Hardware Architecture</h3>
+
+						<p>
+							<b>Computational Nodes: </b>
+							<ul>
+								<li><b>Central computational node:</b> data elaboration point. <br>It communicates with sensors and controls actuators through wires. Upddates data inside the central server thanks to an internet connection, wifi or Ethernet. This is set near the bin area.</li>
+								<li><b>Server:(Centralized computational node):</b> data storage and data elaboration point</li>
+								<li><b>Mobile Device (Smartphone/Tablet):</b> will retrieve data from the server through an internet connection, and show them to the User using our App. It will also show Notifications, because a requested bin from the user has just been discharged.</li>
+							<b>Sensors:</b>
+							<ul>
+								<li><b>Weight Sensors:</b> placed on the bottom of bins. <br>They are used to calculate points in the challenge.</li>
+								<li><b>Proximity Sensors(UltraSounds):</b> placed just below the cap, inside the bins.<br> They will check if the bin is almost full, to activate lock.</li>
+							<li	><b>NFC Sensor(Receiver):</b> placed inside the bin area. <br>This will recognize(by badge detection) a user, a Gman, or an Admin, to open available bins.</li>
+							</ul>
+							<b>Actuators:</b>
+							<ul>
+								<li><b>Led Lights(red and green):</b> placed on the cap of each bin.<br> They will display the actual state of a bin to the User. Red if full(not available) and green if available.</li>
+								<li><b>[Ad Hoc] Locker Systems:</b> placed on the cap of each bin.<br> This will activate to unlock a bin only if it is available and a User is accessing the area. Otherwise it will keep bins locked.</li>
+								<li><b>[Ad Hoc] Spray Vaporizators:</b> placed under the cap of each bin.<br> If a Gman has completed the collection of a bin, this system will igienize the air and will provide some good scent.</li>
+							</ul>
+
+							<b>User interface devices:</b>
+							<ul>
+								<li><b>Personal Identification Badge for the User:</b><br> a key chain with NFC (or Bluetooth) technology inside.</li>
+								<li><b>Our mobile Android App:</b> users will acceed to different features after the log in.<br> Admin, Garbage Collector and Users will have three different set of features available.</li>
+							</ul>
+							</ul>
+						</p>
+
+					<h3>Software Architecture</h3>
+					<p>
+						<h4>Mobile Application: </h4>
+						<b>Functionalities: </b>
+						<ul>
+							<li>User Identification via Log In</li>
+							<li>Shows Charts from the Challenge, to Users</li>
+							<li>Shows for each bin, what is the actual level of free space, to Users</li>
+							<li>Shows hints about recycling, to Users</li>
+							<li>Shows Scheduled Collection of the Bins, to Users</li>
+							<li>Allows to add and to remove Users, to Admin</li>
+							<li>Shows Notifications about bins which have reached status of Not Available, or if they are full, to Gman</li>
+							<li>After showing Notification about fullfilled(not available) bins, allows to set a date for next collection, to GMAN.</li>
+						</ul>
+						<h4>Runs On: </h4>
+						<p>A Server Machine</p>
+
+						<h4>Interacts With: </h4>
+						<p>A Server Machine</p>
+							<ul>
+								<li>The Actuators files</li>
+								<li>The Sensors files</li>
+								<li>The Server</li>
+							</ul>
+					</p>
+
+					<h3>Hardware Components</h3>
+					<p>
+						<ol>
+							<li>Android Mobile device, since Android v.5.0</li>
+							<li>Leds(green and red); [Ad Hoc] Spray System; [Ad Hoc] Locking System;</li>
+							<li>NFC personal Identifier(for Keychain);</li>
+							<li>Weight Sensors; NFC receiver; Proximity Sensors(technology of Ultrasounds);</li>
+							<li>Raspberry Pi 3;</li>
+							<li>Server Machine to run a DBMS;</li>
+						</ol>
+
+					<h3>Software Components</h3>
+					<p>
+						<ol>
+							<li>Android Mobile App;</li>
+							<li>Android APIs for level 22;</li>
+							<li>Sensors and Actuators APIs;</li>
+							<li>Central Node Software;</li>
+							<li>Server Hosting Service;</li>
+							<li>Python 3.5.2;<li>
+							<li>Flask/PHP?;</li>
+							<li>MySQL;</li>
+						</ol>
+					</p>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-12">
+					<p class="copyright text-center">Mr.Bin</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="social social-circle">
+						<li><a href="#"><i class="fa fa-github"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
